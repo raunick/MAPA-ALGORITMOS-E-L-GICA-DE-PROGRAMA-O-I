@@ -1,4 +1,4 @@
-# MAPA-ALGORITMOS-E-L-GICA-DE-PROGRAMA-O-I
+# MAPA-ALGORITMOS 1 
 Mostra o tabuleiro em X, E e S.
 
 
