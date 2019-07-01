@@ -1,6 +1,6 @@
 Algoritmo "Mapa - Engenharia de software"
 // Disciplina  : [ALGORITMOS E LÓGICA DE PROGRAMAÇÃO I]
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Descrição   : Mostra o tabuleiro em X, E e S.
 // Autor(a)    : Raunick Vileforte Vieira Generoso
 // Data atual  : 02/06/2019
 Var
@@ -17,11 +17,12 @@ Inicio
               matriz [i,j] <- "[ ]"
          fimpara
     fimpara
-
-  escreval ("=================================")
+  escreval ("==================")
+  escreval (" TABULEIRO CRIADO ")
+  escreval ("==================")
   escreval ()
 
-    //mostra o tabuleiro   X
+    //mostra o tabuleiro   [ ]
     para i de 1 ate 6 faca
          para j de 1 ate 6 faca
               escreva (matriz [i,j])
@@ -31,16 +32,17 @@ Inicio
     
     
   escreval ()
-  escreval ("=================================")
+  escreval ("==================")
 
 
 
 
 
    REPITA
-       EscrevaL("Escolha uma opção")
+       EscrevaL("Escolha uma opção:")
        escreval("[1] - Mostrar Tabuleiro X ")
        escreval("[2] - Mostrar Tabuleiro E | S ")
+       escreval("[3] - Limpar Tabuleiro [ ] ")
        escreval("[0] - Finalizar programa")
        escreva ("Opção -->")
        leia (op)
@@ -48,8 +50,10 @@ Inicio
        ESCOLHA (op)
             Caso 1
             limpatela
-               escreval ("=================================")
-               escreval ()
+                 escreval ("==================")
+                 escreval (" TABULEIRO CRIADO ")
+                 escreval ("==================")
+                 escreval ()
             //preenche o tabuleiro
                 para i de 1 ate 6 faca
                     para j de 1 ate 6 faca
@@ -64,11 +68,13 @@ Inicio
                      escreval()
                 fimpara
                escreval ()
-               escreval ("=================================")
+               escreval ("==================")
             Caso 2
             limpatela
-               escreval ("=================================")
-               escreval ()
+                 escreval ("==================")
+                 escreval (" TABULEIRO CRIADO ")
+                 escreval ("==================")
+                 escreval ()
             //preenche o tabuleiro
                 para i de 1 ate 6 faca
                     para j de 1 ate 6 faca
@@ -120,7 +126,34 @@ Inicio
                      escreval()
                 fimpara
              escreval ()
-             escreval ("=================================")
+             escreval ("==================")
+
+            Caso 3
+            limpatela
+            //preenche o tabuleiro
+             para i de 1 ate 6 faca
+                  para j de 1 ate 6 faca
+                       matriz [i,j] <- "[ ]"
+                  fimpara
+             fimpara
+           escreval ("==================")
+           escreval (" TABULEIRO CRIADO ")
+           escreval ("==================")
+           escreval ()
+
+             //mostra o tabuleiro   [ ]
+             para i de 1 ate 6 faca
+                  para j de 1 ate 6 faca
+                       escreva (matriz [i,j])
+                  fimpara
+                  escreval()
+             fimpara
+
+
+           escreval ()
+           escreval ("==================")
+
+            escreval("[3] - Limpar Tabuleiro [ ] ")
             Caso 0
             escreval ("Progrma finalizado! ")
         OUTROCASO
